@@ -85,7 +85,7 @@ class ChatController extends Controller
             $chatroom->save();
 
             return redirect()->route('chatManager')
-                ->with($this->toastr->success('Chatroom Successfully Added', 'Yay!', ['options']));
+                ->with($this->toastr->success('Sala adicionada com sucesso!', 'Yay!', ['options']));
         }
     }
 
@@ -113,7 +113,7 @@ class ChatController extends Controller
             $chatroom->save();
 
             return redirect()->route('chatManager')
-                ->with($this->toastr->success('Chatroom Successfully Modified', 'Yay!', ['options']));
+                ->with($this->toastr->success('Sala modificada com sucesso!', 'Yay!', ['options']));
         }
     }
 
@@ -130,7 +130,7 @@ class ChatController extends Controller
         $chatroom->delete();
 
         return redirect()->route('chatManager')
-            ->with($this->toastr->success('Chatroom Successfully Deleted', 'Yay!', ['options']));
+            ->with($this->toastr->success('Sala deletada com sucesso!', 'Yay!', ['options']));
     }
 
     /**
@@ -160,7 +160,7 @@ class ChatController extends Controller
             $chatstatus->save();
 
             return redirect()->route('chatManager')
-                ->with($this->toastr->success('Chat Status Successfully Added', 'Yay!', ['options']));
+                ->with($this->toastr->success('Status do chat foi adicionado!', 'Yay!', ['options']));
         }
     }
 
@@ -192,7 +192,7 @@ class ChatController extends Controller
             $chatstatus->save();
 
             return redirect()->route('chatManager')
-                ->with($this->toastr->success('Chat Status Successfully Modified', 'Yay!', ['options']));
+                ->with($this->toastr->success('Status do chat foi modificado com sucesso!', 'Yay!', ['options']));
         }
     }
 
@@ -209,7 +209,7 @@ class ChatController extends Controller
         $chatstatus->delete();
 
         return redirect()->route('chatManager')
-            ->with($this->toastr->success('Chat Status Successfully Deleted', 'Yay!', ['options']));
+            ->with($this->toastr->success('Status do chat foi deletado!', 'Yay!', ['options']));
     }
 
     /**
@@ -227,10 +227,10 @@ class ChatController extends Controller
         }
 
         $this->chat->systemMessage(
-            'Chatbox Has Been Flushed! :broom:'
+            'O chat foi limpo! :broom:'
         );
 
         return redirect('staff_dashboard')
-            ->with($this->toastr->success('Chatbox Has Been Flushed', 'Yay!', ['options']));
+            ->with($this->toastr->success('O chat foi limpo', 'Yay!', ['options']));
     }
 }
