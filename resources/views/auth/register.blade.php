@@ -52,7 +52,7 @@
             <img src="{{ url('/img/icon.svg') }}" id="icon" alt="@lang('auth.user-icon')"/>
         </div>
 
-        <p>Estamos com problemas ao enviar email de confirmação de cadastro! Caso não chege em 3 minutos, envie um email para sharingue@protonmail.ch!</p>
+        <p>Estamos com problemas ao enviar email de confirmação de cadastro! Caso não chegue em 3 minutos, envie um email para sharingue@protonmail.ch</p>
 
         <form role="form" method="POST" action="{{ route('register', ['code' => $code]) }}">
             @csrf
