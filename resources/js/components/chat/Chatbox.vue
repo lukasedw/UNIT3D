@@ -14,7 +14,7 @@
                             <i class="fa fa-robot"></i> {{ helpName }}
                         </a>
                         <a href="" view="list" v-if="target < 1 && bot < 1 && tab != 'userlist'" @click.prevent="changeTab('list','userlist')" class="btn btn-xs btn-primary">
-                            <i class="fa fa-users"></i> Users In {{tab}}: {{users.length}}
+                            <i class="fa fa-users"></i> Usuários em {{tab}}: {{users.length}}
                         </a>
                         <a href="#" id="panel-fullscreen" role="button" :class="this.fullscreen == 1 ? `btn btn-xs btn-success` : `btn btn-xs btn-success`" title="Toggle Fullscreen" @click.prevent="changeFullscreen()"><i :class="this.fullscreen == 1 ? `glyphicon glyphicon-resize-small` : `glyphicon glyphicon-resize-full`"></i>
                         </a>

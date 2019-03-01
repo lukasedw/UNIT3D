@@ -65,7 +65,7 @@ class RegisterController extends Controller
         // Make sure open reg is off and invite code is present
         if ($code === 'null' && config('other.invite-only') == 1) {
             return view('auth.login')
-                ->with($this->toastr->error('Open Reg Closed! You Must Be Invited To Register! You Have Been Redirected To Login Page!', 'Whoops!', ['options']));
+                ->with($this->toastr->error('Você tem que ser convidado para se registrar! Você vai ser redirecionado para página de login!', 'Registro não está aberto!', ['options']));
         }
 
         return view('auth.register', ['code' => $code]);
@@ -77,7 +77,7 @@ class RegisterController extends Controller
         $key = Invite::where('code', '=', $code)->first();
         if (config('other.invite-only') == 1 && (! $key || $key->accepted_by !== null)) {
             return view('auth.register', ['code' => $code])
-                ->with($this->toastr->error('Invalid or Expired Invite Key!', 'Whoops!', ['options']));
+                ->with($this->toastr->error('Código de convite inválido ou expirado!', 'Whoops!', ['options']));
         }
 
         $validatingGroup = Group::where('slug', '=', 'validating')->select('id')->first();
@@ -169,13 +169,13 @@ class RegisterController extends Controller
             $profile_url = hrefProfile($user);
 
             $welcomeArray = [
-                "[url={$profile_url}]{$user->username}[/url], Welcome to ".config('other.title').'! Hope you enjoy the community :rocket:',
-                "[url={$profile_url}]{$user->username}[/url], We've been expecting you :space_invader:",
-                "[url={$profile_url}]{$user->username}[/url] has arrived. Party's over. :cry:",
-                "It's a bird! It's a plane! Nevermind, it's just [url={$profile_url}]{$user->username}[/url].",
-                "Ready player [url={$profile_url}]{$user->username}[/url].",
-                "A wild [url={$profile_url}]{$user->username}[/url] appeared.",
-                'Welcome to '.config('other.title')." [url={$profile_url}]{$user->username}[/url]. We were expecting you ( ͡° ͜ʖ ͡°)",
+                "[url={$profile_url}]{$user->username}[/url], Seja bem vindo ao ".config('other.title').'! Espero que você curta a comunidade! :rocket:',
+                "[url={$profile_url}]{$user->username}[/url], Nós estávamos esperando você! :space_invader:",
+                "[url={$profile_url}]{$user->username}[/url] chegou. A festa acabou. :cry:",
+                "É um pássaro! É uma avião! Ah, deixa, é só o [url={$profile_url}]{$user->username}[/url].",
+                "Uploader pronto [url={$profile_url}]{$user->username}[/url].",
+                "O corajoso [url={$profile_url}]{$user->username}[/url] apareceu.",
+                'Seja bem bindo '.config('other.title')." [url={$profile_url}]{$user->username}[/url]. Estávamos te esperando ( ͡° ͜ʖ ͡°)",
             ];
             $selected = mt_rand(0, count($welcomeArray) - 1);
 
@@ -195,7 +195,7 @@ class RegisterController extends Controller
             \LogActivity::addToLog('Member '.$user->username.' has successfully registered to site.');
 
             return redirect()->route('login')
-                ->with($this->toastr->success('Thanks for signing up! Please check your email to Validate your account', 'Yay!', ['options']));
+                ->with($this->toastr->success('Verifique seu e-mail para concluir seu cadastro. (Abra SPAM e a lixeira!!!)', 'Obrigado por se registrar!', ['options']));
         }
     }
 }
