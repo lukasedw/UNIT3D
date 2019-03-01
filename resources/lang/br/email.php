@@ -32,4 +32,6 @@ return [
     'unban-footer'     => 'Bem vindo de volta!',
     'unban-header'     => 'Você foi desbanido',
     'unban-reason'     => 'Razão',
+    'disabled-header'  => 'Sua conta foi desativada',
+    'pruned-header'    => 'Sua conta foi deletada',
 ];

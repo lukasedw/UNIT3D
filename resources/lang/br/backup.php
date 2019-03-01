@@ -7,7 +7,7 @@ return [
     'create_a_new_backup'            => 'Criar novo backup',
     'create_confirmation_message'    => 'Recarregando a página em 3 segundos.',
     'create_confirmation_title'      => 'Backup efetuado',
-    'create_error_message'           => 'O arquivo de backup NÃO pôde ser criado.',
+    'create_error_message'           => 'O arquivo de backup NÃO pode ser criado.',
     'create_error_title'             => 'Erro de backup',
     'create_warning_message'         => 'Seu backup pode não ter sido criado. Por favor, verifique os arquivos de log para mais detalhes.',
     'create_warning_title'           => 'Erro desconhecido',

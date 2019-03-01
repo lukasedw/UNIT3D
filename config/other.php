@@ -22,7 +22,7 @@ return [
     |
     */
 
-    'codebase' => '"UNIT3D" Nex-Gen Torrent Tracker v1.9',
+    'codebase' => '"Sharingue" Nex-Gen Torrent Tracker v1.9',
 
     /*
     |--------------------------------------------------------------------------
@@ -33,7 +33,7 @@ return [
     |
     */
 
-    'title' => 'UNIT3D',
+    'title' => 'Sharingue',
 
     /*
     |--------------------------------------------------------------------------
@@ -44,7 +44,7 @@ return [
     |
     */
 
-    'subTitle' => 'Built On Laravel',
+    'subTitle' => 'Construido com carinho <3',
 
     /*
     |--------------------------------------------------------------------------

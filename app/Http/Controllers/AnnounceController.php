@@ -173,10 +173,10 @@ class AnnounceController extends Controller
         }
 
         // If Torrent Is Pending Moderation Return Error to Client
-        if ($torrent->status == 0) {
-            //info('Client Attempted To Connect To Announce But The Torrent Is Pending Moderation');
-            return response(Bencode::bencode(['failure reason' => 'Torrent is still pending moderation']), 200, ['Content-Type' => 'text/plain']);
-        }
+//        if ($torrent->status == 0) {
+//            //info('Client Attempted To Connect To Announce But The Torrent Is Pending Moderation');
+//            return response(Bencode::bencode(['failure reason' => 'Torrent is still pending moderation']), 200, ['Content-Type' => 'text/plain']);
+//        }
 
         // If Torrent Is Rejected Return Error to Client
         if ($torrent->status == 2) {

@@ -19,6 +19,10 @@ return [
     'blacklist-clients'    => 'Clientes',
     'blacklist-desc'       => 'Os seguintes navegadores e clientes bittorrent que estão na lista negra estão proibidos para usar no :title',
     'blacklist-webbrowser' => 'Navegador',
+    'blacklist-emaildomain' => 'Domínios bloqueados',
+    'email-blacklist-desc'  => 'Os seguintes domínios de email estão bloqueados de serem usados. Você não pode registrar ou enviar um convite para eles.',
+    'email-whitelist-desc'  => 'Os seguintes domínios de email são os únicos domínios de email permitidos para serem usados. Você só pode se registrar ou enviar um convite usando eles.',
     'staff-group'          => 'Grupo',
     'staff-title'          => 'Título',
+    'whitelist-emaildomain' => 'Domínios confiáveis',
 ];

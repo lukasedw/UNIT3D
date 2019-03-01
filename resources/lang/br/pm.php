@@ -19,6 +19,7 @@ return [
     'search'        => 'Pesquisar por assunto',
     'select'        => 'Pesquisar por usuário',
     'send'          => 'Enviar',
+    'send-to'       => 'Enviar MP para',
     'sent'          => 'Enviada',
     'sent-at'       => 'Enviada em',
     'subject'       => 'Assunto',

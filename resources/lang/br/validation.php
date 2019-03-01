@@ -94,6 +94,7 @@ return [
     | specify a specific custom language line for a given attribute rule.
     |
     */
+    'email_list' => 'Desculpe, este domínio de email não pode ser usado neste site. Por favor, consulte sites de e-mail whitelist.',
 
     'custom' => [
         'attribute-name' => [

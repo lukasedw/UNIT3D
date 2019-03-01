@@ -2,9 +2,10 @@
 
 return [
     'by-count'                => 'Quantidade',
+    'by-data'                 => 'Por data',
     'by-volume'               => 'Por volume',
-    'groups'                  => 'Grupos',
     'group'                   => 'Grupo',
+    'groups'                  => 'Grupos',
     'nerd-stats'              => 'Estatísticas para nerd',
     'nerd-stats-desc'         => 'Nós amamos estatísticas. Aqui estão algumas que achamos importantes',
     'registration-date'       => 'Data de registro',
@@ -25,6 +26,7 @@ return [
     'top-leeched'             => 'Top leeched',
     'top-leechers'            => 'Top leechers',
     'top-seeded'              => 'Top seeded',
+    'top-seeding'             => 'Top Seeding',
     'top-seeders'             => 'Top seeders',
     'top-seedsize'            => 'Top tamanho do seed',
     'top-seedtime'            => 'Top tempo em seed',
