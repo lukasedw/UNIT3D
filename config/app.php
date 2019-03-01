@@ -23,7 +23,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'UNIT3D',
+    'name' => 'Sharingue',
 
     /*
     |--------------------------------------------------------------------------
@@ -75,7 +75,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'America/Sao_Paulo',
 
     /*
     |--------------------------------------------------------------------------
@@ -88,7 +88,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'br',
 
     /*
     |--------------------------------------------------------------------------

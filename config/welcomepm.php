@@ -22,7 +22,7 @@ return [
     |
     */
 
-    'subject' => 'Welcome to UNIT3D',
+    'subject' => 'Seja bem-vindo ao Sharingue!!!',
 
     /*
     |--------------------------------------------------------------------------
@@ -33,7 +33,7 @@ return [
     |
     */
 
-    'message' => 'Welcome To [b]UNIT3D[/b].
+    'message' => 'Seja bem-vindo ao [b]Sharingue[/b].
 
-    - UNIT3D :space_invader:',
+    - Sharingue :space_invader:',
 ];

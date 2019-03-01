@@ -66,7 +66,7 @@ return [
     |
     */
 
-    'meta_description' => 'Built On Laravel',
+    'meta_description' => 'Construido com carinho <3',
 
     /*
     |--------------------------------------------------------------------------
@@ -76,7 +76,7 @@ return [
     | Date Site Was Born
     |
     */
-    'birthdate' => 'December 30th 2017',
+    'birthdate' => '28 de janeiro de 2019',
 
     /*
     |--------------------------------------------------------------------------
@@ -86,9 +86,9 @@ return [
     | Global Freeleech
     |
     */
-    'freeleech' => false,
+    'freeleech' => true,
 
-    'freeleech_until' => '12/23/2017 3:00 PM EST',
+    'freeleech_until' => '03/15/2019 3:00 PM EST',
 
     /*
     |--------------------------------------------------------------------------
@@ -132,7 +132,7 @@ return [
     | Restricted mode for invites. If set to true, invites will be restricted
     | Exempt these groups from the invite restrictions
     */
-    'invite-only'   => true,
+    'invite-only'   => false,
     'invite_expire' => '14',
 
     'invites_restriced' => false,
