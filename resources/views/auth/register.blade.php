@@ -51,7 +51,9 @@
         <div class="fadeIn first">
             <img src="{{ url('/img/icon.svg') }}" id="icon" alt="@lang('auth.user-icon')"/>
         </div>
-
+        @if ($code == 'ggames')
+            <p>Você veio pelo <a href="https://ggames.com.br/" target="_blank">GGAMES!!!</a></p>
+        @endif
         <p>Estamos com problemas ao enviar email de confirmação de cadastro! Caso não chegue em 3 minutos, envie um email para sharingue@protonmail.ch</p>
 
         <form role="form" method="POST" action="{{ route('register', ['code' => $code]) }}">

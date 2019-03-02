@@ -87,7 +87,14 @@ class RegisterController extends Controller
         $user->password = Hash::make($request->input('password'));
         $user->passkey = md5(uniqid().time().microtime());
         $user->rsskey = md5(uniqid().time().microtime().$user->password);
-        $user->uploaded = config('other.default_upload');
+        if (config('other.invite-only') == 0 && $code == 'ggames') {
+            $user->uploaded = 161061273600;
+            $user->invites = 5;
+
+        } else {
+            $user->uploaded = config('other.default_upload');
+        }
+
         $user->downloaded = config('other.default_download');
         $user->style = config('other.default_style', 0);
         $user->locale = config('app.locale');
