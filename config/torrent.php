@@ -33,7 +33,7 @@ return [
     |
     */
 
-    'source' => 'UNIT3D',
+    'source' => 'Sharingue',
 
     /*
     |--------------------------------------------------------------------------
@@ -44,7 +44,7 @@ return [
     |
     */
 
-    'created_by'        => 'Edited by UNIT3D',
+    'created_by'        => 'Edited by Sharingue',
     'created_by_append' => true,
 
     /*
@@ -56,5 +56,5 @@ return [
     |
     */
 
-    'comment' => 'This torrent was downloaded from UNIT3D',
+    'comment' => 'This torrent was downloaded from Sharingue',
 ];
