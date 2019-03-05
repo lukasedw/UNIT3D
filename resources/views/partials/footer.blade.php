@@ -68,6 +68,10 @@
 {{--               class="btn btn-xs btn-primary">@lang('common.patron')</a>--}}
             <a href="https://github.com/UNIT3D/UNIT3D"
                class="btn btn-xs btn-primary">@lang('common.powered-by')</a>
+            <a href="https://www.facebook.com/groups/sharingue/"
+               class="btn btn-xs btn-primary">Facebook)</a>
+            <a href="https://t.me/joinchat/AAAAAEXSMDEFPdFfgzYwtg"
+               class="btn btn-xs btn-primary">Telegram</a>
         </div>
     </div>
 </div>
