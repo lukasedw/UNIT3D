@@ -43,7 +43,7 @@ class AchievementUnlocked
             $profile_url = hrefProfile($user);
 
             $this->chat->systemMessage(
-                "User [url={$profile_url}]{$user->username}[/url] has unlocked the {$event->progress->details->name} achievement :medal:"
+                "O usuário [url={$profile_url}]{$user->username}[/url] desbloqueou a conquista {$event->progress->details->name} :medal:"
             );
         }
     }

@@ -109,7 +109,7 @@ class CommentController extends Controller
             $profile_url = hrefProfile($user);
 
             $this->chat->systemMessage(
-                "[url={$profile_url}]{$user->username}[/url] has left a comment on article [url={$article_url}]{$article->title}[/url]"
+                "[url={$profile_url}]{$user->username}[/url] deixou um comentário no artigo [url={$article_url}]{$article->title}[/url]"
             );
 
             if ($this->tag->hasTags($request->input('content'))) {
@@ -210,11 +210,11 @@ class CommentController extends Controller
             // Auto Shout
             if ($comment->anon == 0) {
                 $this->chat->systemMessage(
-                    "[url={$profile_url}]{$user->username}[/url] has left a comment on Torrent [url={$torrent_url}]{$torrent->name}[/url]"
+                    "[url={$profile_url}]{$user->username}[/url] deixou um comentário no Torrent [url={$torrent_url}]{$torrent->name}[/url]"
                 );
             } else {
                 $this->chat->systemMessage(
-                    "An anonymous user has left a comment on torrent [url={$torrent_url}]{$torrent->name}[/url]"
+                    "Um anônimo deixou um comentário no torrent [url={$torrent_url}]{$torrent->name}[/url]"
                 );
             }
 
@@ -311,11 +311,11 @@ class CommentController extends Controller
             // Auto Shout
             if ($comment->anon == 0) {
                 $this->chat->systemMessage(
-                    "[url={$profile_url}]{$user->username}[/url] has left a comment on Request [url={$tr_url}]{$tr->name}[/url]"
+                    "[url={$profile_url}]{$user->username}[/url] deixou um comentário no pedido [url={$tr_url}]{$tr->name}[/url]"
                 );
             } else {
                 $this->chat->systemMessage(
-                    "An anonymous user has left a comment on Request [url={$tr_url}]{$tr->name}[/url]"
+                    "Um anônimo deixou um comentário no pedido [url={$tr_url}]{$tr->name}[/url]"
                 );
             }
 
@@ -436,7 +436,7 @@ class CommentController extends Controller
             $profile_url = hrefProfile($user);
 
             $this->chat->systemMessage(
-                "[url={$profile_url}]{$user->username}[/url] has left a comment on Torrent [url={$torrent_url}]{$torrent->name}[/url]"
+                "[url={$profile_url}]{$user->username}[/url] deixou um comentário no Torrent [url={$torrent_url}]{$torrent->name}[/url]"
             );
 
             return redirect()->route('torrent', ['slug' => $torrent->slug, 'id' => $torrent->id])

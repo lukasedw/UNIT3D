@@ -182,7 +182,7 @@ class RegisterController extends Controller
                 "É um pássaro! É uma avião! Ah, deixa, é só o [url={$profile_url}]{$user->username}[/url].",
                 "Uploader pronto [url={$profile_url}]{$user->username}[/url].",
                 "O corajoso [url={$profile_url}]{$user->username}[/url] apareceu.",
-                'Seja bem bindo '.config('other.title')." [url={$profile_url}]{$user->username}[/url]. Estávamos te esperando ( ͡° ͜ʖ ͡°)",
+                'Seja bem vindo '.config('other.title')." [url={$profile_url}]{$user->username}[/url]. Estávamos te esperando ( ͡° ͜ʖ ͡°)",
             ];
             $selected = mt_rand(0, count($welcomeArray) - 1);
 
