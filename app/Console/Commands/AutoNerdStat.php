@@ -135,6 +135,7 @@ class AutoNerdStat extends Command
                 "Nas últimas 24 horas [color=#dd7e6b][b]{$bans}[/b][/color] usários foram banidos ".config('other.title').'!',
                 "Nas últimas 24 horas [color=#dd7e6b][b]{$warnings}[/b][/color] avisos de H&R foram dados no ".config('other.title').'!',
                 "O aniversário do ".config('other.title')." é no dia [b]{$bday}[/b]!",
+                "Acesse nossas redes sociais: [url=https://www.facebook.com/groups/sharingue/]Facebook[/url] | [url=https://t.me/joinchat/AAAAAEXSMDEFPdFfgzYwtg]Telegram[/url]",
                 config('other.title').' É REI!',
             ];
             $selected = mt_rand(0, count($statArray) - 1);
