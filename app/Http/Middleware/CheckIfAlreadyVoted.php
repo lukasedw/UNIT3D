@@ -56,7 +56,7 @@ class CheckIfAlreadyVoted
         //flash a Toastr and redirect to results.
         if ($poll->ip_checking == 1) {
             if (Voter::where('ip_address', '=', $request->ip())->where('poll_id', '=', $poll->id)->exists()) {
-                $this->toastr->error('There is already a vote on this poll from your IP. Your vote has not been counted.', 'Whoops!', ['options']);
+                $this->toastr->error(trans('toastr.poll-ip-already-voted'), trans('toastr.error'), ['options']);
 
                 return redirect('poll/'.$poll->slug.'/result');
             }

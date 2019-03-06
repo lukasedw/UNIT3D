@@ -597,7 +597,7 @@ class UserController extends Controller
         $privacy->show_online = ($request->input('show_online') && $request->input('show_online') == 1 ? 1 : 0);
         $privacy->save();
 
-        return redirect()->route('user_privacy', ['slug' => $user->slug, 'id' => $user->id, 'hash' => '#other'])->with($this->toastr->success('Your Other Privacy Settings Have Been Saved!', 'Yay!', ['options']));
+        return redirect()->route('user_privacy', ['slug' => $user->slug, 'id' => $user->id, 'hash' => '#other'])->with($this->toastr->success('Your Other Privacy Settings Have Been Saved!', trans('toastr.success'), ['options']));
     }
 
     /**
@@ -630,7 +630,7 @@ class UserController extends Controller
         $privacy->show_requested = ($request->input('show_requested') && $request->input('show_requested') == 1 ? 1 : 0);
         $privacy->save();
 
-        return redirect()->route('user_privacy', ['slug' => $user->slug, 'id' => $user->id, 'hash' => '#request'])->with($this->toastr->success('Your Request Privacy Settings Have Been Saved!', 'Yay!', ['options']));
+        return redirect()->route('user_privacy', ['slug' => $user->slug, 'id' => $user->id, 'hash' => '#request'])->with($this->toastr->success('Your Request Privacy Settings Have Been Saved!', trans('toastr.success'), ['options']));
     }
 
     /**

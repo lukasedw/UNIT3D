@@ -53,7 +53,7 @@ class CheckIfActive
             $request->session()->flush();
 
             return redirect('login')
-                ->with($this->toastr->warning('This account has not been activated and is still in validating group, Please check your email for activation link. If you did not receive the activation code, please click "forgot password" and complete the steps.', 'Whoops!', ['options']));
+                ->with($this->toastr->warning(trans('toastr.account-not-active'), trans('toastr.error'), ['options']));
         }
 
         return $next($request);

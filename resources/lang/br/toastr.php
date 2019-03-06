@@ -65,6 +65,15 @@ return [
     'account-permissions-updated'   =>  'Account Permissions Succesfully Edited',
     'account-password-updated'      =>  'Account Password Updated Succesfully',
     'account-deleted'               =>  'Account Has Been Deleted Succesfully',
+    'account-banned'   => 'This account is Banned!',
+    'account-not-active'   => 'This account has not been activated and is still in validating group, Please check your email for activation link. If you did not receive the activation code, please click "forgot password" and complete the steps.',
+
+    // Poll
+    'poll-ip-already-voted'      => 'There is already a vote on this poll from your IP. Your vote has not been counted.',
+    'poll-already-voted'         => 'You have already vote on this poll. Here are the results.',
+    'poll-try-vote-already-voted'         => 'Bro have already vote on this poll. Your vote has not been counted.',
+    'poll-voted-successfully'         => 'Your vote has been counted.',
+
 
     // User Notes
     'note-created'  =>  'Note Created Successfully',

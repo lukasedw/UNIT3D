@@ -53,7 +53,7 @@ class CheckIfBanned
             $request->session()->flush();
 
             return redirect('login')
-                ->with($this->toastr->error('This account is Banned!', 'Whoops!', ['options']));
+                ->with($this->toastr->error(trans('toastr.account-banned'), trans('toastr.error'), ['options']));
         }
 
         return $next($request);

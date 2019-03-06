@@ -71,7 +71,7 @@ class PollController extends Controller
 
         if ($user_has_voted) {
             return redirect('poll/'.$poll->slug.'/result')
-                ->with($this->toastr->info('You have already vote on this poll. Here are the results.', 'Hey There!', ['options']));
+                ->with($this->toastr->info(trans('poll-already-voted'), trans('toastr.info'), ['options']));
         }
 
         return view('poll.show', compact('poll'));
@@ -95,7 +95,7 @@ class PollController extends Controller
 
         if (Voter::where('user_id', '=', $user->id)->where('poll_id', '=', $poll->id)->exists()) {
             return redirect('poll/'.$poll->slug.'/result')
-                ->with($this->toastr->error('Bro have already vote on this poll. Your vote has not been counted.', trans('toastr.error'), ['options']));
+                ->with($this->toastr->error(trans('poll-try-vote-already-voted'), trans('toastr.error'), ['options']));
         }
 
         if ($poll->ip_checking == 1) {
@@ -114,7 +114,7 @@ class PollController extends Controller
         );
 
         return redirect('poll/'.$poll->slug.'/result')
-            ->with($this->toastr->success('Your vote has been counted.', trans('toastr.success'), ['options']));
+            ->with($this->toastr->success(trans('poll-voted-successfully'), trans('toastr.success'), ['options']));
     }
 
     /**
